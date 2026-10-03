@@ -1,0 +1,164 @@
+    @import url(
+    'https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap'
+);
+
+:root {
+    --text: #ebebeb;
+    --glass: rgba(33, 37, 41, 0.21);
+    --border: rgba(255, 255, 255, 0.3);
+    --hover: rgba(255, 255, 255, 0.1);
+    --shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    --radius: 16px;
+    --page-padding: 1rem;
+    --content-width: 90vw;
+}
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: var(--page-padding);
+    color: var(--text);
+    font-family: 'JetBrains Mono', monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.bgimg {
+    position: fixed;
+    inset: 0;
+    z-index: -10;
+    background-image: url('../images/depthcoreBG.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    filter: brightness(25%);
+    
+}
+
+.header,
+.home__container,
+.footer {
+    background: var(--glass);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(5px);
+    
+}
+
+
+
+.header {
+    width: 100%;
+    max-width: var(--content-width);
+    margin: 0 auto 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    position: sticky;
+}
+
+.header__home-link {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.header__home-link h1 {
+    margin: 0;
+    font-size: 1.25rem;
+    
+}
+
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.navigation a {
+    border-radius: 10px;
+    color: var(--text);
+    flex: 1 1 auto;
+    min-width: 80px;
+    padding: 0.75rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    
+    
+    transition:
+        background-color 150ms ease,
+        transform 150ms ease;
+}
+
+.navigation a:hover {
+    background: var(--hover);
+}
+
+.navigation a:focus-visible {
+    outline: 2px solid var(--text);
+    outline-offset: 2px;
+}
+
+.navigation a:active {
+    transform: scale(0.97);
+}
+
+.main {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    max-width: var(--content-width);
+    margin: 0 auto;
+}
+
+.footer {
+    width: 100%;
+    max-width: var(--content-width);
+    margin: 2rem auto 0;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    color: var(--text);
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    :root {
+        --page-padding: 1.5rem;
+    }
+
+    .header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 1rem 1.5rem;
+    }
+
+    .navigation {
+        width: auto;
+    }
+
+    .navigation a {
+        flex: 0 1 auto;
+    }
+}

@@ -1,0 +1,60 @@
+.current__page {
+    background: var(--hover);
+}
+
+.wiki__mice h2 {    
+    margin: 0 0 1.5rem;
+    color: var(--text);
+    font-size: 2rem;   
+}
+
+.mouse__shape{
+    width: 100%;
+    height: 100%;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.RVMSE{
+    height: auto;
+    width: 70%;
+    border: 2px solid var(--border);
+    border-radius: var(--radius);
+    margin: 0;
+}
+
+.ULX{
+    height: auto;
+    width: 50%;
+    border: 2px solid var(--border);
+    border-radius: var(--radius);
+    margin-top: 8rem;
+}
+
+.article__header{
+    font-size: 2rem;
+}
+
+.article__text p {
+    width: var(--content-width);
+    height: 10%;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.inertia {
+    width: 100%;
+    height: 100%;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 768px){
+    .article__text{
+        font-size: 1.5rem;
+    }
+}
+

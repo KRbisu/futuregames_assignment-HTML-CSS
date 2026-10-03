@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>fraimwork_ver_1</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/global.css">
+        <link rel="stylesheet" href="../styles/contact.css">
+    </head>
+    <body>
+        <div class="bgimg"></div> 
+            <header class="header"> 
+                <a class="header__home-link" href="../index.html"> 
+                    <h1>fraimwork</h1> 
+                </a> 
+                <nav class="navigation">
+                     <a href="../index.html">Home</a> <a href="wiki.html">Wiki</a>
+                     <a class="current__page" href="contact.html">Contact</a>
+                </nav>
+            </header>
+            <main class="main">
+                <form class="user__input" action="mailto: temp@yandex.ru" method="GET" enctype="text/plain">
+                    <fieldset class="user__info">
+                        <legend class="legend">Contact Info</legend>
+                        <label for="e__mail">E-Mail</label>
+                        <input required type="text" id="e__mail" class="e_mail" name="e__mail" placeholder="Enter E-Mail Adress">
+                        <label for="name">Name</label>
+                        <input required type="text" id="name" class="name" name="name" placeholder="Enter Name">
+                    </fieldset>
+                    <fieldset class="user__message">
+                        <legend>Message</legend>
+                        <label for="message">Message we'll answer with an automated AI response goes here</label>
+                        <textarea name="message" id="message"></textarea>
+                        <label class="check-box__promos" for="promotions">Subscribe to spam e-mails no one wants</label>
+                        <input class="check-box" type="checkbox" id="promotions" name="promotions" value="promotions" checked>
+                        <label class="check-box__sell-soul" for="sell-soul">Sell soul to data-brokers and evil corporations</label>
+                        <input required class="check-box" type="checkbox" id="sell-soul" name="sell-soul" value="sell-soul">  
+                    </fieldset>
+                    <div class="button__wrapper"><button class="button__send">Send</button></div>
+                </form>
+            </main>
+        <footer class="footer"> 
+            <p>&copy; bisu 2026</p> 
+        </footer>
+    </body>
+</html>
