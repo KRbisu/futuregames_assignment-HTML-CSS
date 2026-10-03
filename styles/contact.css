@@ -29,6 +29,7 @@ label{
     color: var(--text);
     border: 1px solid var(--border);
     border-radius: var(--radius);
+    font-family: 'JetBrains Mono';
 }
 
 .name:focus-visible {
