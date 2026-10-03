@@ -5,7 +5,8 @@
 .wiki__mice h2 {    
     margin: 0 0 1.5rem;
     color: var(--text);
-    font-size: 2rem;   
+    font-size: 2rem;
+    text-align: center;   
 }
 
 .mouse__shape{
